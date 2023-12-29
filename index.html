@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -173,7 +174,7 @@
       </div>
     </section>
 
-
+    <!-- project section starts -->
     <section class="projects" id="projects">
       <h1 class="headings">Projects</h1>
       <div class="project-card">
@@ -187,11 +188,10 @@
         <div class="tech-stack">
           <img src="images/python.svg" alt="Tech Logo">
           <img src="images/windows.svg" alt="Tech Logo">
-          <!-- Add other logos for the tech stack -->
         </div>
       </div>
       <div class="project-card">
-        <a href="#" class="project-title">SHCS
+        <a href="https://github.com/Mkaif-Qureshi/Smart-Health-Consulting-System" target="_blank" class="project-title">SHCS
           <img src="images/github.svg" class="svg" alt="github logo">
         </a>
         <p class="project-description">
@@ -206,7 +206,6 @@
           <img src="images/js.svg" class="svg" alt="Tech Logo">
           <img src="images/php.svg" class="svg" alt="Tech Logo">
           <img src="images/mysql.svg" class="svg" alt="Tech Logo">
-          <!-- Add other logos for the tech stack -->
         </div>
       </div>
       <div class="project-card">
@@ -222,17 +221,17 @@
           <img src="images/css.svg" class="svg" alt="Tech Logo">
           <img src="images/php.svg" class="svg" alt="Tech Logo">
           <img src="images/mysql.svg" class="svg" alt="Tech Logo">
-          <!-- Add other logos for the tech stack -->
         </div>
 
       </div>
       <div class="show-all-button">
         <a href="https://github.com/Mkaif-Qureshi" target="_blank" class="show-all-link">See All</a>
       </div>
-      <!-- Create multiple project cards as needed -->
     </section>
+    <!-- project section ends -->
 
 
+    <!-- connect section starts -->
     <section class="connect" id="connect">
       <div class="connect-content">
         <div class="connect-image">
@@ -258,7 +257,9 @@
         </div>
       </div>
     </section>
+    <!-- connect section ends -->
 
+    <!-- game section starts -->
     <div class="container" id="play">
       <h2 style="padding-top: 15px;">Tic Tac Toe</h2>
       <div class="game">
@@ -278,6 +279,8 @@
         <button class="restart-btn">Restart Game</button>
       </div>
     </div>
+    <!-- game section ends -->
+
 
     <!-- footer starts -->
     <footer>
@@ -297,8 +300,8 @@
         Developed by M.Kaif Qureshi <a href="https://github.com/Mkaif-Qureshi/portfolio" target="_blank">Code</a>
       </h4>
     </footer>
+    <!-- footer ends -->
   </div>
-
 
 
 
@@ -306,7 +309,6 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
     import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js";
 
-    // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyBRf1g_XT1v94IUzQKR-bKUCH3fW_j0zL4",
       authDomain: "portfolio-659ed.firebaseapp.com",
@@ -341,8 +343,7 @@
       // Clear form
       document.getElementById('contactForm').reset();
     }
-
-    // const database = firebase.database();
+    
     function saveMessage(name, email, subject, message) {
       const db = getDatabase();
       const currentDate = new Date().toISOString();

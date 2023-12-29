@@ -8,7 +8,6 @@
 body {
   font-family: "Montserrat";
   margin: 0;
-  /* background-color: #f0f0f0; */
 }
 
 body, html {
@@ -29,7 +28,6 @@ body, html {
   background-attachment: fixed;
   height: 100%;
 }
-
 
 .navbar.hidden {
   transform: translateX(-50%) translateY(100%); 
@@ -103,11 +101,6 @@ nav {
   padding: 50px;
   position: relative;
   z-index: 1;
-  /* background-image: url('images/back.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.5); 
-  backdrop-filter: blur(100px); */
 }
 
 #para{
@@ -168,11 +161,11 @@ svg {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  padding: 20px; /* Add padding for space around the cards */
-  background-image: url('images/back.png'); /* Replace with your image */
+  padding: 20px; 
+  background-image: url('images/back.png'); 
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.1); /* Adjust transparency */
+  background-color: rgba(255, 255, 255, 0.1); 
   position: relative;
 }
 
@@ -222,7 +215,6 @@ svg {
   width: 30px;
   height: 30px;
   margin: 5px;
-  /* Add more styling for the tech logos as needed */
 }
 
 .show-all-button {
@@ -251,8 +243,6 @@ svg {
 
 
 /* connect */
-
-/* Styles for Connect section */
 .connect {
   display: flex;
   align-items: center;
@@ -414,6 +404,7 @@ h1 {
 
 /* games */
 
+
 /* footer start */
 footer {
   background-color: #1C1C1E;
@@ -441,7 +432,7 @@ footer h2 {
   padding: 10px 15px;
   font-weight: 500;
   border-radius: 20px;
-  color: #666; /* Adjust link color for better visibility */
+  color: #666; 
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
@@ -454,7 +445,7 @@ footer h2 {
   transform: translateX(-50%);
   width: 0%;
   height: 2px;
-  background-color: #333; /* Adjust link underline color */
+  background-color: #333; 
   transition: width 0.3s ease-in-out;
 }
 
@@ -464,7 +455,7 @@ footer h2 {
 
 .contact-links a:hover {
   transform: translateY(-5px);
-  color: white; /* Adjust link color on hover */
+  color: white;
 }
 
 footer::before {
@@ -473,7 +464,7 @@ footer::before {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30px; /* Adjust the height of the wave */
+  height: 30px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#AF9E8E" fill-opacity="1" d="M0,192L60,213.3C120,235,240,277,360,288C480,299,600,277,720,229.3C840,181,960,107,1080,112C1200,117,1320,203,1380,245.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>');
   background-repeat: repeat-x;
   /* z-index: -1; */
@@ -499,7 +490,7 @@ footer::before {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  z-index: 999; /* Ensure button is above other elements */
+  z-index: 999; 
 }
 
 .fab-button:hover {
@@ -508,7 +499,7 @@ footer::before {
 }
 
 .fab-button i {
-  pointer-events: none; /* Ensures the icon doesn't interfere with clicks */
+  pointer-events: none;
 }
 
 /* go up btn end */
@@ -528,7 +519,6 @@ footer::before {
     padding: 20px 10px;
   }
 }
-
 
 
 /* Media query for smaller screens */
@@ -572,7 +562,7 @@ footer::before {
 @media screen and (max-width: 768px) {
   #about {
     flex-direction: column;
-    padding: 40px 20px; /* Adjust padding for smaller screens */
+    padding: 40px 20px;
   }
 
   #para{
@@ -581,19 +571,17 @@ footer::before {
   }
 
   #about-para {
-    max-width: 100%; /* Full width for text on smaller screens */
-    margin-right: 0; /* No margin for text */
-    margin-bottom: 20px; /* Space between text and skills */
+    max-width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 20px; 
     font-weight: 500;
   }
 
   .skills {
-    max-width: 100%; /* Full width for skills */
+    max-width: 100%; 
   }
 }
 
-
-/* Existing CSS styles remain the same */
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -639,7 +627,5 @@ footer::before {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--silver); /* color of the scrollbar on hover */
+  background: var(--silver);
 }
-
-
