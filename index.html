@@ -347,7 +347,8 @@
     function saveMessage(name, email, subject, message) {
       const db = getDatabase();
       const currentDate = new Date().toISOString();
-      set(ref(db, 'messages/' + currentDate), {
+      const username = email.split('@')[0].replace(/[^\w]/g, '');
+      set(ref(db, 'messages/' + username), {
         name: name,
         email: email,
         subject: subject,
