@@ -186,7 +186,7 @@ nav {
 
 
 /* projects */
-.projects {
+/* .projects {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -269,9 +269,115 @@ nav {
 .show-all-button:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+} */
 /* projects end */
 
+
+/* project */
+.project-section {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  background-image: url('images/back.png'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.1); 
+  position: relative;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+  flex: 0 0 auto;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title i {
+  margin-left: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+}
+
+.project-date {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.tech {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.github-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #0366d6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.github-button:hover {
+  background: #0056b3;
+}
+
+
+/* project end */
 
 /* connect */
 .connect {
@@ -365,7 +471,6 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
-
 /* connect ends */
 
 
