@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (gameActive && currentPlayer === 'O') {
       setTimeout(() => {
         computerMove();
-      }, 400); // Delay for the computer's move for better visualization
+      }, 100); // Delay for the computer's move for better visualization
     }
     statusDisplay.textContent = `Player ${currentPlayer}'s turn`;
   }
