@@ -113,6 +113,7 @@ nav {
   text-align: justify;
   color: var(--black);
   font-weight: 500;
+  line-height: 1.5rem;
 }
 
 .skills {
