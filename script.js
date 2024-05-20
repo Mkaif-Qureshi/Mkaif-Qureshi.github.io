@@ -56,6 +56,29 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var openModalBtn = document.getElementById('openModalBtn');
+  var closeModalBtn = document.querySelector('.resume-modal .resume-close');
+  var modal = document.getElementById('resumeModal');
+  var body = document.body;
 
-// messages
+  openModalBtn.addEventListener('click', function () {
+      modal.style.display = 'block';
+      body.style.overflow = 'hidden'; // Prevent scrolling of the background screen
+  });
+
+  closeModalBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+      body.style.overflow = 'auto'; // Enable scrolling of the background screen
+  });
+
+  window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+          body.style.overflow = 'auto'; // Enable scrolling of the background screen
+      }
+  });
+});
+
+
   

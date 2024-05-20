@@ -23,7 +23,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22> 🤖 </text></svg>">
 
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="styles.css" />
@@ -66,15 +66,22 @@
           cultivate innovation, esteeming diversity as a fundamental catalyst
           for creating significant impact.
         </p>
+        <button id="openModalBtn" class="cool-button">Resume</button>      
       </div>
+
+      <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+            <span class="resume-close">&times;</span>
+            <iframe src="https://drive.google.com/file/d/18T9uiCXt_YI7TpRh40Cn8iNiUZ1MtE0B/preview" frameborder="0"></iframe>
+        </div>
+    </div>
     </section>
 
     <div class="gap"></div>
 
     <section id="skills">
       <div class="skills-container">
-        <!-- <h1 style="margin-left: 2rem;">Skills</h1> -->
-        <h1>&nbsp;</h1>
+
         <div class="skills">
           <figure>
             <i class="fa-brands fa-linux fa-3x"></i>
@@ -84,6 +91,11 @@
           <figure>
             <i class="fa-brands fa-python fa-3x"></i>
             <figcaption>Python</figcaption>
+          </figure>
+
+          <figure>
+            <i class="fa-brands fa-java fa-3x"></i>
+            <figcaption>Java</figcaption>
           </figure>
 
           <figure>
@@ -121,18 +133,13 @@
           </figure>
 
           <figure>
-            <i class="fa-brands fa-github fa-3x"></i>
-            <figcaption>Git&GitHub</figcaption>
-          </figure>
-
-          <figure>
-            <i class="fa-brands fa-java fa-3x"></i>
-            <figcaption>Java</figcaption>
+            <i class="fa-brands fa-react fa-3x"></i>
+            <figcaption>React</figcaption>
           </figure>
 
           <figure>
             <i class="fa-brands fa-node-js fa-3x"></i>
-            <figcaption>Node js</figcaption>
+            <figcaption>Nodejs</figcaption>
           </figure>
 
           <figure>
@@ -141,8 +148,8 @@
           </figure>
 
           <figure>
-            <i class="fa-brands fa-react fa-3x"></i>
-            <figcaption>React</figcaption>
+            <i class="fa-brands fa-github fa-3x"></i>
+            <figcaption>Git&GitHub</figcaption>
           </figure>
 
           <figure>
@@ -152,6 +159,8 @@
             </span>
             <figcaption>Flutter</figcaption>
           </figure>
+
+
         </div>
       </div>
     </section>
@@ -203,6 +212,7 @@
             <span class="tech">python</span>
             <span class="tech">mediapipe</span>
             <span class="tech">flask</span>
+            <span class="tech">openCV</span>
           </div>
           <hr>
           <a href="https://github.com/Mkaif-Qureshi/FITVISION" target="_blank" class="github-button">GitHub</a>
@@ -252,7 +262,7 @@
             <span class="tech">REST API</span>
           </div>
           <hr>
-          <a href="https://github.com/Mkaif-Qureshi/VESIT_COMPASS" class="github-button" target="_blank">GitHub</a>
+          <a href="https://github.com/Mkaif-Qureshi/VESIT_COMPASS" class="github-button" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
         </div>
 
         <div class="project-card">
@@ -357,7 +367,7 @@
         </div>
       </div>
       <div class="modal" id="myModal">
-        <div class="modal-content">
+        <div class="modal-content"  style="width: 300px;">
           <span class="close">&times;</span>
           <img src="images/thanks.svg" alt="thanks-svg" width="70px">
           <p>Thank you for reaching out!</p>
