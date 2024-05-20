@@ -116,6 +116,25 @@ nav {
   line-height: 1.5rem;
 }
 
+
+.myphoto {
+  width: 400px; /* Ensure the container is square */
+  height: 400px; /* Ensure the container is square */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.myphoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+
 .skills {
   flex: 1;
   display: flex;
@@ -169,6 +188,7 @@ nav {
   height: auto;
   /* height: 50px;  */
 }
+
 
 #about::before {
   content: '';
@@ -294,9 +314,8 @@ hr {
 .github-button:hover {
   background: var(--black);
 }
-
-
 /* project end */
+
 
 /* connect */
 .connect {
@@ -339,6 +358,7 @@ hr {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #ccc;
+  resize: none;
 }
 
 .submit-btn {
@@ -543,11 +563,16 @@ footer::before {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
   }
+
 }
 
 
 /* For smaller screens, adjust layout for about section */
 @media screen and (max-width: 768px) {
+  .myphoto{
+    display: none;
+  }
+
   #about {
     flex-direction: column;
     padding: 40px 20px;
@@ -595,14 +620,44 @@ footer::before {
     width: 100%;
     margin-bottom: 20px;
   }
+
+
 }
 
+
+@media screen and (max-width: 820px) {
+  .myphoto{
+    display: none;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  #para{
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  #about-para {
+    max-width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 20px; 
+    font-weight: 500;
+  }
+
+  .skills {
+    max-width: 100%; 
+  }
+}
 
 
 
 /* For WebKit browsers like Chrome/Safari */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -616,26 +671,6 @@ footer::before {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--silver);
-}
-
-
-
-
-.myphoto {
-  width: 400px; /* Ensure the container is square */
-  height: 400px; /* Ensure the container is square */
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid black;
-}
-
-.myphoto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container without distortion */
 }
 
 
